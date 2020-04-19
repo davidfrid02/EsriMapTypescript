@@ -1,0 +1,17 @@
+#vs code settings
+.vscode
+
+# utils
+# index.html
+package-lock.json
+
+#node_modules
+node_modules
+
+#app exclude javascript and map files
+app/**.js
+app/**.js.map
+app/widgets/**/**.js
+app/widgets/**/**.js.map
+
+!widgets/GWTree/vanillatree.js
