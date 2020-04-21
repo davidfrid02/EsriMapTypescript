@@ -1,4 +1,4 @@
-describe("Form test", () => {
+describe("Map TEST", () => {
     it("Get map div", () => {
       cy.visit("/index.html");
       cy.get("#viewDiv");
@@ -14,11 +14,4 @@ describe("Form test", () => {
       cy.get("canvas").click(340, 400);
       cy.get("canvas").click(340, 400);
     });
-
-    it("Fail!", () => {
-      cy.visit("/index2.html");
-      cy.get("#viewDiv"); 
-    });
-
-
   });
