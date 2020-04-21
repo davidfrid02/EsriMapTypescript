@@ -4,12 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "e2e": "cypress open && cypress run",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run e2e"
+    }
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/arcgis-js-api": "^4.15.0"
+    "@types/arcgis-js-api": "^4.15.0",
+    "husky": "^4.2.5"
+  },
+  "devDependencies": {
+    "cypress": "^4.4.1"
   }
 }
