@@ -14,4 +14,7 @@ app/**.js.map
 app/widgets/**/**.js
 app/widgets/**/**.js.map
 
+cypress/screenshots
+cypress/videos
+
 !widgets/GWTree/vanillatree.js
