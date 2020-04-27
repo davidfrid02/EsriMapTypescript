@@ -14,25 +14,24 @@
   <script src="../node_modules/jasmine-core/lib/jasmine-core/boot.js"></script>
 
   <!-- core modules -->
-  <script src="../app/core/core.module.js"></script>
-
   
   <link rel="stylesheet" href="https://js.arcgis.com/4.15/esri/themes/light/main.css">
-  <script>
-      var locationPath = location.pathname.replace(/\/[^\/]+$/, "");
-      window.dojoConfig = {
-          packages: [
-              {
-                  name: "app",
-                  location: locationPath + "/app"
-                }
-            ]
-        };
-        </script>
   <script src="https://js.arcgis.com/4.15"></script>
-        
-  <!-- include spec files here... -->
-  <script src="./spec/MeasurementSpec.js"></script>
+  <!-- <script>
+    window.dojoConfig = {
+      packages: [
+        {
+          name: "widgets",
+          location: "http://localhost:5501/esriMapTypescript/app/widgets"
+        }
+      ]
+    };
+    </script> -->
+    <script src="../app/widgets/Measurement/Measurement.js"></script>
+    <script src="../app/widgets/Sketch/Sketch.js"></script>
+    
+    <!-- include spec files here... -->
+    <script src="./spec/EsriSpec.js"></script>
 </head>
 
 <body>

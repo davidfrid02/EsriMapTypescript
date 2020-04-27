@@ -14,4 +14,8 @@ export default class EsriMeasurement {
     });
     window.Wonderland.view.ui.add(expand, "top-left");
   }
+
+  plus(n1: number,n2:number){
+    return n1 + n2;
+  }
 }

@@ -12,5 +12,5 @@
     "suppressImplicitAnyIndexErrors": true
   },
   "include": ["./app/*", "./test/spec/*"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules/@types", "node_modules"]
 }
